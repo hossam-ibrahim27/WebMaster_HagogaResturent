@@ -22,7 +22,7 @@ const Navlink = () => {
             <div className='container'>
                 <div className="icon">
                     <NavLink className="" to="/">
-                        <img src="../../../public/logo.png" alt="Hagoga logo" className='logo' />
+                        <img src="../../../src/images/logo.png" alt="Hagoga logo" className='logo' />
                     </NavLink>
                 </div> {/*icon */}
                 <div className="dropdown-button" onClick={() => {

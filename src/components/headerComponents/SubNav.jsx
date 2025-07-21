@@ -10,7 +10,7 @@ const SubNav = () => {
                 <div className='upper-nav'>
                     <p>هذه نسخه للتعليم للذهاب الي الموقع الرسمي لمطعم حجوجه اضغط عل  الأيقون</p>
                     <NavLink to="http://hagogah.com/">
-                        <img src="../../../public/logo.png" alt="Hagoga logo" />
+                        <img src="../../../src/images/logo.png" alt="Hagoga logo" />
                     </NavLink>
                 </div> {/*upper-nav*/}
                 <div className="bottom-nav">
