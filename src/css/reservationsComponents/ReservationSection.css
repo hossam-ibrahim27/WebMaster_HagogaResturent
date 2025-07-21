@@ -1,0 +1,214 @@
+.reservation-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.reservation-section .title {
+    width: 100%;
+}
+
+.reservation-section .content {
+    width: 100%;
+    height: 100%;
+    border: 4px solid #dfdfdf;
+    padding: 40px 5%;
+    color: #505b65;
+}
+
+.reservation-section .content .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.reservation-section .content .calender {
+    border: 1px solid #eee;
+    width: 40%;
+    height: 350px;
+    padding: 10px;
+    text-align: center;
+    direction: rtl;
+    line-height: 41px;
+}
+
+/** From Browser I Edite Calender Built-In */
+.reservation-section .content .calender div.react-calendar__navigation {
+    display: flex;
+    cursor: pointer;
+    color: #d07635;
+}
+
+.reservation-section .content .calender button.react-calendar__navigation__arrow,
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from {
+    cursor: pointer;
+}
+
+.reservation-section .content .calender abbr {
+    text-decoration: none;
+}
+
+/************************************/
+.reservation-section .content form {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.reservation-section .content .input-body {
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.reservation-section .content .input-body:hover {
+    color: #080404;
+}
+
+.reservation-section .content .fonticon {
+    border-left: 2px solid #999;
+    padding-left: 10px;
+}
+
+.reservation-section .contente .input-body:hover .fonticon {
+    border-left: 2px solid #080404;
+    padding-left: 10px;
+}
+
+.reservation-section .content .input-body input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.reservation-section .content .privacy-body {
+    display: flex;
+    gap: 5px;
+}
+
+.reservation-section .content .privacy-body p:nth-of-type(2) {
+    color: #d07635;
+}
+
+.reservation-section .content input[type="submit"] {
+    min-width: 50px;
+    min-height: 20px;
+    padding: 10px 35px;
+    background-color: #d07635;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.reservation-section .content .submit-body {
+    position: relative;
+    margin: auto;
+}
+
+/**Ball On Button*/
+.reservation-section .content .submit-body .ball {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    transition: 0.3s all;
+}
+
+.reservation-section .content .submit-body:hover .ball {
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+    top: 85%;
+    right: 25%;
+}
+
+.reservation-section .title {
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #29272e;
+    padding-bottom: 20px;
+}
+
+.reservation-section .title .line {
+    margin: auto;
+    background-color: #d07635;
+    width: 5%;
+    height: 1px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.reservation-section .title .line::before,
+.reservation-section .title .line::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d07635;
+}
+
+.reservation-section .title .line::after {
+    right: -3px;
+}
+
+.reservation-section .title .line::before {
+    left: 0;
+}
+
+.reservation-section .content .read-privacy {
+    color: crimson;
+}
+
+.reservation-section .content .read-privacy-ok {
+    color: mediumseagreen;
+}
+
+/********************************************************************/
+/**Responsive*/
+@media (max-width:1110px) {
+    .reservation-section .content {
+        width: 80%;
+    }
+
+    .reservation-section .content .order {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .reservation-section .content .calender,
+    .reservation-section .content form {
+        width: 100%;
+    }
+}
+
+@media (max-width:486px) {
+    .reservation-section .content .calender {
+        padding: 0;
+    }
+
+    .reservation-section .content {
+        width: 100%;
+    }
+}

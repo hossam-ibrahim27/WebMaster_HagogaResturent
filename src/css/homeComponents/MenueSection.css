@@ -1,0 +1,120 @@
+.menue-section .container {
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+.menue-section .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menue-section .title h2:nth-of-type(1) {
+    color: #d07635;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.menue-section .title h2:nth-of-type(2) {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin: auto;
+}
+
+/**Line*/
+.menue-section .title h2:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: 130%;
+    width: 80%;
+    height: 1px;
+    background-color: #d07635;
+}
+
+/**ball Above*/
+.menue-section .title h2:nth-of-type(1)::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: -110%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translate(-100%, 50%);
+    background-color: #d07635;
+}
+
+/** Tabs */
+.menue-section .nav {
+    width: 100%;
+    text-align: center;
+}
+
+.menue-section .nav .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menue-section .nav .tabs li {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bolder;
+}
+
+.menue-section .nav .tabs li.active,
+.menue-section .nav .tabs li:hover {
+    color: #d07635;
+}
+
+.menue-section .nav .content>div {
+    padding: 20px;
+}
+
+.menue-section .nav .content>div:not(:first-child) {
+    display: none;
+}
+
+/*******************************************************/
+/**Responsive*/
+@media (max-width:720px) {
+    .menue-section .title h2:nth-of-type(2) {
+        font-size: 50px;
+    }
+
+    .menue-section .nav .tabs li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:630px) {
+    .menue-section .title h2:nth-of-type(2) {
+        font-size: 40px;
+    }
+
+    .menue-section .title {
+        text-align: start;
+    }
+
+    .menue-section .title h2:nth-of-type(1) {
+        margin: 0;
+    }
+}
+
+@media (max-width:300px) {
+    .menue-section .title h2:nth-of-type(2) {
+        font-size: 20px;
+    }
+}

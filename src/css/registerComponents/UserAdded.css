@@ -1,0 +1,8 @@
+.user-added {
+    position: relative;
+    background-color: brown;
+    top: 50%;
+    left: 0;
+    color: burlywood;
+    z-index: 1000000;
+}

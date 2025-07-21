@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.surbrice-section .overlay {
+    background: #ffffffcc;
+}
+
+.surbrice-section .content h3 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #29272e;
+}
+
+.surbrice-section .content .form {
+    width: 300px;
+    height: 40px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.surbrice-section .content .form input {
+    border: none;
+    outline: none;
+}
+
+.surbrice-section .content .form .icon {
+    border-right: 2px solid #e2e2e2;
+    color: #d07635;
+    padding-right: 10px;
+}
+
+/******************************************************************************/
+/***/
+@media (max-width:350px) {
+    .surbrice-section .content .form {
+        width: 80%;
+    }
+}
+@media (max-width:300px) {
+    .surbrice-section .content .form {
+        display: none;
+    }
+}

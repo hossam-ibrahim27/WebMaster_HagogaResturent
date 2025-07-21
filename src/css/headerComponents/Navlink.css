@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+.nav-parent {
+    @apply w-screen text-stone-100 flex justify-between items-center;
+    background-color: rgba(0, 0, 0, 0.722);
+    font-size: 20px;
+    height: 100px;
+}
+
+.container {
+    width: 70%;
+    @apply flex justify-between items-center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-parent .links .link {
+    margin-left: 20px;
+    position: relative;
+}
+
+.nav-parent .links .link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d07635;
+    transition: 0.5s linear;
+}
+
+.nav-parent .links .link.active {
+    font-weight: bolder;
+}
+
+.nav-parent .links .link.active::after {
+    width: 100%;
+}
+
+.nav-parent .links .link:hover:after {
+    width: 100%;
+}
+
+.nav-parent .icon img {
+    width: 80px;
+}
+
+.nav-parent .form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-parent .form.loin span {
+    padding: 5px 10px;
+    border: 1px solid #d07635;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-parent .form.loin span.fill {
+    background-color: #d07635;
+}
+
+.nav-parent .form.logout span {
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.nav-parent .form.logout span:nth-of-type(2) {
+    cursor: pointer;
+}
+
+.nav-parent .form.logout .fonticon {
+    color: #d07635;
+}
+
+.nav-parent .dropdown-button {
+    display: none;
+    background-color: #d07635;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.nav-parent .links.drowpdown {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    border-radius: 20px;
+    width: 70%;
+    box-shadow: 0 0 30px #fff inset;
+    color: #eee;
+    background-color: #d07635;
+    transition: 0.5s;
+    transform: translateX(-10%)
+}
+.nav-parent .links.drowpdown .link::after {
+    background-color: #eee;
+}
+
+/***************************************************************/
+/**Responsive*/
+@media (max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1030px) {
+    .nav-parent .links {
+        display: none;
+    }
+
+    .nav-parent .dropdown-button {
+        display: inline-block;
+    }
+}
+
+@media (max-width:600px) {
+    .food-card {
+        justify-content: center;
+    }
+
+    .food-discrip {
+        width: 60%;
+    }
+}
+
+@media (max-width:540px) {
+    .nav-parent {
+        font-size: 16px;
+    }
+
+    .nav-parent .form {
+        gap: 2px;
+    }
+
+    .nav-parent .form.logout span {
+        padding: 5px;
+    }
+}
+
+@media (max-width:445px) {
+    .nav-parent {
+        height: 115px;
+    }
+
+    .nav-parent .container {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .nav-parent .form {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav-parent .icon img {
+        width: 40px;
+    }
+
+    .nav-parent .dropdown-button {
+        padding: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:240px) {
+    .nav-parent {
+        height: 250px;
+    }
+
+    .nav-parent .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-parent .links.drowpdown {
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+    }
+}

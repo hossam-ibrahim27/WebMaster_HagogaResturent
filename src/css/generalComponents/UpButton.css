@@ -1,0 +1,23 @@
+.up-button {
+    background-color: #d07635;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 1.5%;
+    z-index: 20;
+    border: 3px solid #ffffff;
+    font-size: 20px;
+    color: #eee;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.up-button:hover .fonticon {
+    transform: translate(0, -10%);
+}
+
+.hidden-button {
+    display: none;
+}

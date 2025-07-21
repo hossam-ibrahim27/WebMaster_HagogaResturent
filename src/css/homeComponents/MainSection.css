@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+.main-section {
+    background-image: url(../../images/banner.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    @apply text-stone-100;
+}
+
+.main-section .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000042;
+}
+
+.main-section .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    text-align: center;
+}
+
+.main-section .title h2 {
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+.main-section .title p {
+    position: relative;
+    font-size: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    /* margin-top: -50px;  */
+}
+
+.main-section .title p .dot {
+    @apply bg-stone-100;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.main-section .title p .linebefore {
+    position: absolute;
+    bottom: 50%;
+    right: 120%;
+    width: 50%;
+    height: 3px;
+    background-color: aliceblue;
+}
+
+.main-section .title p .lineafter {
+    position: absolute;
+    bottom: 50%;
+    left: 120%;
+    width: 50%;
+    height: 3px;
+    @apply bg-stone-100;
+}
+
+.main-section .title p .lineafter::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    @apply bg-stone-100;
+    transform: translate(-100%, 50%);
+}
+
+.main-section .title p .linebefore::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(100%, 50%);
+    @apply bg-stone-100;
+}
+
+.main-section .form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section .form span {
+    padding: 5px 55px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #d07635;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-section .form span.fill {
+    @apply bg-stone-100;
+    color: #d07635;
+    cursor: pointer;
+}
+
+/***************************************************************/
+/**Responsive*/
+@media (max-width:1200px) {
+    .main-section .title h2 {
+        font-size: 80px;
+    }
+
+    .main-section .title p {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:950px) {
+    .main-section .title h2 {
+        font-size: 60px;
+    }
+
+    .main-section .title p {
+        font-size: 40px;
+    }
+
+    .main-section .title p .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .main-section .title p .lineafter::after,
+    .main-section .title p .linebefore::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .main-section .title p .linebefore::before {
+        transform: translate(50%, 50%);
+    }
+}
+
+@media (max-width:840px) {
+    .main-section .form span {
+        font-size: 18px;
+        padding: 5px 45px;
+    }
+}
+
+@media (max-width:720px) {
+    .main-section .title h2 {
+        font-size: 50px;
+    }
+
+    .main-section .title p {
+        font-size: 30px;
+    }
+
+    .main-section .form span {
+        padding: 5px 35px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:640px) {
+    .main-section .form {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .main-section .form span.fill {
+        padding: 5px 55px;
+    }
+}
+
+@media (max-width:600px) {
+    .main-section .title {
+        top: 55%;
+    }
+}
+
+@media (max-width:420px) {
+
+    .main-section .title p .lineafter::after,
+    .main-section .title p .linebefore::before,
+    .main-section .title p .linebefore,
+    .main-section .title p .lineafter {
+        width: 0;
+    }
+
+    .main-section .title p,
+    .main-section .title h2 {
+        width: 100%;
+    }
+}
+
+@media (max-width:325px) {
+    .main-section .title {
+        top: 375px;
+    }
+}

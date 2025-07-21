@@ -1,0 +1,92 @@
+.offer-page.offer-section {
+    background-size: cover;
+}
+
+.offer-page.offer-section .overlay {
+    background: rgb(0 0 0 / 60%);
+}
+
+.offer-page.offer-section .content {
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.offer-page.offer-section .content h2 {
+    font-size: 60px;
+    color: #fff;
+    margin: auto;
+    width: 100%;
+}
+
+.offer-page.offer-section .content p {
+    color: #d2d2d2;
+    font-size: 16px;
+    position: relative;
+}
+
+.offer-page.offer-section .title div {
+    border-radius: 50%;
+    padding: 6px;
+    width: fit-content;
+    margin: auto;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+/**Line left*/
+.offer-page.offer-section .content h2:nth-of-type(1)::before {
+    top: 105%;
+    right: 7%;
+    width: 37%;
+    height: 2px;
+    background-color: #fff;
+}
+
+/**ball Above line left*/
+.offer-page.offer-section .content h2:nth-of-type(1)::after {
+    width: 6px;
+    height: 6px;
+    top: 101%;
+    right: 41%;
+    background-color: #fff;
+    transform: translate(-7px, 2px);
+}
+
+/**Line Right*/
+.offer-page.offer-section .title p::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 2px;
+    background-color: #fff;
+    left: 8%;
+    top: -100%;
+}
+
+/**ball Above line Right*/
+.offer-page.offer-section .title p::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    left: 42%;
+    top: -110%;
+    border-radius: 50%;
+}
+
+/*************************************************************************************************/
+/**Responsive*/
+@media (max-width:520px) {
+    .offer-page.offer-section .content h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:420px) {
+    .offer-page.offer-section .content h2 {
+        font-size: 45px;
+    }
+}

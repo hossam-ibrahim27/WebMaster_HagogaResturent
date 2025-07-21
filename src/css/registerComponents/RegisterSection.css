@@ -1,0 +1,168 @@
+.register-section {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.register-section .parent {
+    width: 35%;
+}
+
+.register-section .parent form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #dfdfdf;
+    padding: 40px 5%;
+}
+
+.register-section .parent .input-body {
+    margin-bottom: 15px;
+    background-color: #f6f6f6;
+    color: #999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+.register-section .parent .input-body:hover,
+.register-section .parent textarea:hover::placeholder {
+    color: #080404;
+}
+
+.register-section .parent .fonticon {
+    border-left: 2px solid #999;
+    padding-left: 10px;
+}
+
+.register-section .parent .input-body:hover .fonticon {
+    border-left: 2px solid #080404;
+    padding-left: 10px;
+}
+
+.register-section .parent input,
+.register-section .parent textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.register-section .parent .name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+}
+
+.register-section .parent textarea {
+    resize: none;
+    background-color: #f6f6f6;
+    color: #999;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.register-section .parent input[type="submit"] {
+    padding: 10px 80px;
+    background-color: #d07635;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.register-section .parent .submit-body {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/**Ball On Button*/
+.register-section .parent .submit-body .ball {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 57%;
+    right: 10%;
+    transition: 0.3s all;
+}
+
+.register-section .parent .switch span:nth-of-type(2) {
+    color: #d07635;
+    margin-right: 10px;
+}
+
+.register-section .parent .submit-body:hover .ball {
+    width: 50%;
+    height: 2px;
+    border-radius: 2px;
+    top: 85%;
+    right: 25%;
+}
+
+.register-section .parent h2 {
+    font-size: 50px;
+    color: #29272e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-section .parent .validate {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #ff1443;
+    width: 100%;
+    padding-right: 10px;
+    font-weight: bolder;
+}
+
+.register-section .parent .validate .ok {
+    color: seagreen;
+}
+
+/***************************************************************/
+/**Responsive*/
+@media (max-width:1200px) {
+    .register-section .parent {
+        width: 55%;
+    }
+}
+
+@media (max-width:670px) {
+    .register-section .parent {
+        width: 80%;
+    }
+}
+
+@media (max-width:520px) {
+    .register-section .parent {
+        width: 90%;
+    }
+
+    .register-section .parent .name-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .register-section .parent h2{
+        font-size: 40px;
+    }
+}
+@media (max-width:320px) {
+    .register-section .parent {
+        width: 100%;
+    }
+    .register-section .parent h2{
+        font-size: 30px;
+    }
+}

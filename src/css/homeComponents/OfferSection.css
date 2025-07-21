@@ -1,0 +1,55 @@
+.offer-section {
+    background-image: url(../../images/slider_2_d.png);
+    margin-top: 20px;
+    color: aliceblue;
+    background-attachment: fixed;
+}
+
+.offer-section .overlay {
+    background: rgb(0 0 0 / 80%);
+}
+
+.offer-section .content {
+    align-items: start;
+    justify-content: start;
+}
+
+.offer-section .content h2:nth-of-type(1) {
+    margin: 0;
+    font-size: 18px;
+}
+
+.offer-section .content h2:nth-of-type(2) {
+    font-size: 50px;
+    margin: 0;
+}
+
+/**Line*/
+.about-section .content h2:nth-of-type(1)::before {
+    height: 1px;
+}
+
+/**ball Above*/
+.about-section .content h2:nth-of-type(1)::after {
+    width: 5px;
+    height: 5px;
+}
+
+/***************************************************************/
+/**Responsive*/
+@media (max-width:1360px) {
+    .offer-section .content .img-dev {
+        width: 60%;
+    }
+}
+
+@media (max-width:1030px) {
+    .offer-section .content {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .offer-section .content h2:nth-of-type(1) {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,147 @@
+.menue-page.menue-section .slider-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.menue-page.menue-section .tabs-slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.menue-page.menue-section .slider-tab {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.menue-page.menue-section .slider-tab.active {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
+
+.menue-page.menue-section .slider-tab img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.menue-page.menue-section .tab-space {
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+}
+
+.menue-page.menue-section .control-tab {
+    position: relative;
+}
+
+.menue-page.menue-section .control-tab button {
+    padding: 8px 16px;
+    border: none;
+    background: #f3d4c2;
+    color: #d07635;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menue-page.menue-section .control-tab button.prev {
+    position: absolute;
+    top: -90px;
+    right: 0;
+}
+
+.menue-page.menue-section .control-tab button.next {
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+
+.menue-page.menue-section .control-tab button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #fff;
+}
+
+.menue-page.menue-section .control-tab button.prev::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f1d2c0;
+    top: 44%;
+    right: 102%;
+}
+
+.menue-page.menue-section .control-tab button.next::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f1d2c0;
+    top: 44%;
+    left: 102%;
+}
+
+.menue-page.menue-section .control-tab button.disabled::after {
+    background-color: #ccc;
+}
+
+.menue-page.menue-section .container .content {
+    width: 100%;
+}
+
+/*************************************************************************************************/
+/**Responsive*/
+@media (max-width:1030px) {
+    .menue-page.menue-section .tabs-slider {
+        flex-direction: column;
+    }
+
+    .menue-page.menue-section .control-tab button.prev {
+        top: -250px;
+    }
+
+    .menue-page.menue-section .control-tab button.next {
+        top: -250px;
+    }
+}
+
+@media (max-width:340px) {
+    .menue-page.menue-section .control-tab button.prev {
+        right: 30px;
+    }
+
+    .menue-page.menue-section .control-tab button.next {
+        left: 30px;
+    }
+
+    .menue-page.menue-section .control-tab button.prev::after {
+        width: 35%;
+        left: -37%;
+    }
+
+    .menue-page.menue-section .control-tab button.next::before {
+        width: 35%;
+        right: -37%;
+    }
+}
+
+@media (max-width:300px) {
+    .menue-page.menue-section .control-tab button.prev {
+        top: 0;
+    }
+
+    .menue-page.menue-section .control-tab button.next {
+        top: 0;
+    }
+}
