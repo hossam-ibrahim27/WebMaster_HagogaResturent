@@ -1,5 +1,5 @@
 import { useState } from "react";
-import tabs from "../data/DataMenueSections";
+import tabs from "../data/DataMenueSections.js";
 import FoodTabs from "../menueComponents/FoodTabs";
 import "../../../src/css/menueComponents/MenueSection.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

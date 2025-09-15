@@ -3,6 +3,7 @@ import '../../css/headerComponents/Navlink.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faRightFromBracket, faGripLines } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import logo from "/src/images/logo.png";
 
 const Navlink = () => {
     const classActive = ({ isActive }) => {
@@ -22,7 +23,7 @@ const Navlink = () => {
             <div className='container'>
                 <div className="icon">
                     <NavLink className="" to="/">
-                        <img src="../../../src/images/logo.png" alt="Hagoga logo" className='logo' />
+                        <img src={logo} alt="Hagoga logo" className='logo' />
                     </NavLink>
                 </div> {/*icon */}
                 <div className="dropdown-button" onClick={() => {

@@ -3,7 +3,7 @@ import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'; {
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'; {/** Fcebook , insta icons*/ }
 import "../../css/generalComponents/Footer.css"
 import { NavLink } from 'react-router';
-
+import logo from '/src/images/logo.png';
 const Footer = () => {
     return (
         <footer>
@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="upper-half">
                         <div className="icons">
                             <div className='hagoga'>
-                                <img src='../../../public/logo.png' alt='Hagoga-Icon' />
+                                <img src={logo} alt='Hagoga-Icon' />
                             </div>
                             <div className='social'>
                                 <NavLink className="link" target='_blank' to="https://www.facebook.com/7agoga"><FontAwesomeIcon className='icon-face' icon={faFacebookF} /></NavLink>

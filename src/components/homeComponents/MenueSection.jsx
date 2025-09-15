@@ -1,7 +1,7 @@
 import '../../css/homeComponents/MenueSection.css';
 import { useState } from 'react';
 import FoodTabs from './FoodTabs';
-import tabs from '../data/DataMenueSections';
+import tabs from '../data/DataMenueSections.js';
 
 const MenueSection = () => {
     const [activeTab, setActiveTab] = useState(tabs[0].id);
@@ -37,3 +37,4 @@ const MenueSection = () => {
     );
 }
 export default MenueSection;
+

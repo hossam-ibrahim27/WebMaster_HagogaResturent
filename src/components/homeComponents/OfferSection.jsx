@@ -1,5 +1,6 @@
 import '../../css/homeComponents/OfferSection.css';
-import '../../css/homeComponents/AboutSection.css'
+import '../../css/homeComponents/AboutSection.css';
+import imagOffer from "/src/images/CatHome.png"
 const OfferSection = () => {
     return (
         <div className='about-section offer-section'>
@@ -7,7 +8,7 @@ const OfferSection = () => {
             <div className="container">
                 <div className='content'>
                     <div className='img-dev'>
-                        <img src="../../../src/images/CatHome.png" alt='hagoga story' />
+                        <img src={imagOffer} alt='hagoga story' />
                     </div>
                     <div className='title'>
                         <h2>مطعم حجوجة</h2>

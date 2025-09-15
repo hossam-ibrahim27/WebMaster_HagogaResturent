@@ -1,4 +1,4 @@
-import data from "./data/DataOfferSections";
+import data from "./data/DataOfferSections.js";
 import Footer from "./generalComponents/Footer";
 import Header from "./generalComponents/Header";
 import OfferSection from "./generalComponents/OfferSection";

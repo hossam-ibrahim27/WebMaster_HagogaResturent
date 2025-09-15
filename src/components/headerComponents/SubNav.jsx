@@ -3,6 +3,7 @@ import '../../css/headerComponents/SubNav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';; {/** location icons*/ }
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'; {/** Fcebook , insta icons*/ }
+import logo from "/src/images/logo.png"
 const SubNav = () => {
     return (
         <div className='sub-nav'>
@@ -10,7 +11,7 @@ const SubNav = () => {
                 <div className='upper-nav'>
                     <p>هذه نسخه للتعليم للذهاب الي الموقع الرسمي لمطعم حجوجه اضغط عل  الأيقون</p>
                     <NavLink to="http://hagogah.com/">
-                        <img src="../../../src/images/logo.png" alt="Hagoga logo" />
+                        <img src={logo} alt="Hagoga logo" />
                     </NavLink>
                 </div> {/*upper-nav*/}
                 <div className="bottom-nav">

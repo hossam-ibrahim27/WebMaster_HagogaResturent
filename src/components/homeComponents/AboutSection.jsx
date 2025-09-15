@@ -1,8 +1,11 @@
 import '../../css/homeComponents/AboutSection.css'
+import image1 from "/src/images/Group_1L.png";
+import image2 from "/src/images/ourstory.png";
+
 const AboutSection = () => {
     const iamges = [
-        { src: "../../../src/images/Group_1L.png" },
-        { src: "../../../src/images/ourstory.png" },
+        { src: image1 },
+        { src: image2 },
     ];
     return (
         <div className="about-section">

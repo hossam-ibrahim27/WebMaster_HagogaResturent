@@ -2,7 +2,7 @@ import SurbriceSection from "../homeComponents/SurbriceSection";
 import Footer from "./Footer";
 import Header from "./Header";
 import OfferSection from "./OfferSection";
-import data from "../data/DataOfferSections"
+import data from "../data/DataOfferSections.js"
 import RegisterSection from "../registerComponents/RegisterSection";
 const Register = () => {
     return (

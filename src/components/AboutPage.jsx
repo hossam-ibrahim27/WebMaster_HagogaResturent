@@ -3,7 +3,7 @@ import Header from "./generalComponents/Header";
 import SurbriceSection from "./homeComponents/SurbriceSection";
 import AboutSection from "./aboutComponents/AboutSection";
 import OfferSection from "./generalComponents/OfferSection";
-import data from "./data/DataOfferSections"
+import data from "./data/DataOfferSections.js"
 import UpButton from "./generalComponents/UpButton"
 const AboutPage = () => {
     return (
