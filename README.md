@@ -18,12 +18,10 @@ The Third Task of The Web Master Internship :  “UI/UX is Missing… Can You Dr
 ### Tools:
 - HTML
 - CSS
-- Tailwind(V4).
 - React
 - React Router Dom
 - FireBase[Back-End System].
 - Media Quary
-- API
 - All Components Builld From Scratch [Not Use UI Components]
 ### Demo: 
 in Varcel: https://web-master-hagoga-resturent-ybqc.vercel.app/
