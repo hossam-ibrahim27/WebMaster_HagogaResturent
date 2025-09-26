@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router';
 import '../../css/homeComponents/MainSection.css'
+
 const MainSection = () => {
     return (
         <div className="main-section">

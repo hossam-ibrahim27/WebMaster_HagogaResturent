@@ -10,7 +10,6 @@ import SurbriceSection from "./homeComponents/SurbriceSection";
 
 
 const HomePage = () => {
-
     return (
         <>
             <Header />

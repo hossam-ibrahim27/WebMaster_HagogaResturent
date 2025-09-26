@@ -4,6 +4,7 @@ import Header from "./Header";
 import OfferSection from "./OfferSection";
 import data from "../data/DataOfferSections.js"
 import LoginSection from "../loginComponents/LoginSection";
+
 const Login = () => {
     return (
         <div>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';; {/** location icons*/ }
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'; {/** Fcebook , insta icons*/ }
 import logo from "/src/images/logo.png"
+
 const SubNav = () => {
     return (
         <div className='sub-nav'>

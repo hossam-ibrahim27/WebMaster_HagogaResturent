@@ -1,6 +1,7 @@
 import '../../css/homeComponents/OfferSection.css';
 import '../../css/homeComponents/AboutSection.css';
 import imagOffer from "/src/images/CatHome.png"
+
 const OfferSection = () => {
     return (
         <div className='about-section offer-section'>

@@ -1,4 +1,5 @@
 import "../../css/menueComponents/FoodTabs.css"
+
 const FoodTabs = (props) => {
     //* Props Will Return Object So We Must Convert To Array
     const food = Array.from(props.foodsprice);

@@ -5,6 +5,7 @@ import SurbriceSection from "./homeComponents/SurbriceSection";
 import data from "./data/DataOfferSections.js"
 import MenueSection from "./menueComponents/MenueSection";
 import UpButton from "./generalComponents/UpButton"
+
 const MenuePage = () => {
     return (
         <>

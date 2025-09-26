@@ -7,28 +7,23 @@ import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 const MenueSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
     const handleNext = () => {
         if (activeIndex < tabs.length - 1) {
             setActiveIndex(prev => prev + 1);
         }
     };
-
     const handlePrev = () => {
         if (activeIndex > 0) {
             setActiveIndex(prev => prev - 1);
         }
     };
-
     const getVisibleTabs = () => {
         const prev = tabs[activeIndex - 1];
         const current = tabs[activeIndex];
         const next = tabs[activeIndex + 1];
         return [prev, current, next];
     };
-
     const visibleTabs = getVisibleTabs();
-
     return (
         <div className='menue-page menue-section'>
             <div className="container">

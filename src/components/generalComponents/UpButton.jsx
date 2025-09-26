@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons'; {/**icons*/ }
 import "../../css/generalComponents/UpButton.css"
 import { useState } from 'react';
+
 const UpButton = () => {
     const [togleUp, setToggleUp] = useState("")
     window.onscroll = () => {

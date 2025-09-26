@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import "../css/homeComponents/MainSection.css"
 import "../css/generalComponents/NotFoundPage.css"
+
 const NotFoundPage = () => {
     return (
         <div className="not-found main-section">

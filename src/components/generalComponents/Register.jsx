@@ -4,6 +4,7 @@ import Header from "./Header";
 import OfferSection from "./OfferSection";
 import data from "../data/DataOfferSections.js"
 import RegisterSection from "../registerComponents/RegisterSection";
+
 const Register = () => {
     return (
         <>

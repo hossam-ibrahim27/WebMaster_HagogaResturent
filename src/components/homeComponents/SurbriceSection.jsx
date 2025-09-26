@@ -3,6 +3,7 @@ import "../../css/homeComponents/SurbriceSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import subscripe from "/src/images/Group_1L.png";
+
 const SurbriceSection = () => {
     const iamges = [
         { src: subscripe },

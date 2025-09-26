@@ -2,6 +2,7 @@ import '../../css/homeComponents/AboutSection.css'
 import '../../css/aboutComponents/AboutSection.css'
 import img1 from "/src/images/Group_1L.png"
 import img2 from "/src/images/ourstory.png"
+
 const AboutSection = () => {
     const iamges = [
         { src: img1 },

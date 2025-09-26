@@ -5,6 +5,7 @@ import AboutSection from "./aboutComponents/AboutSection";
 import OfferSection from "./generalComponents/OfferSection";
 import data from "./data/DataOfferSections.js"
 import UpButton from "./generalComponents/UpButton"
+
 const AboutPage = () => {
     return (
         <>

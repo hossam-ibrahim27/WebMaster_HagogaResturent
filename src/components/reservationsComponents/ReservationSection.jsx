@@ -6,6 +6,7 @@ import { NavLink } from "react-router";
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import app from "../../configure/Firebase";
 import { useState } from "react";
+
 const ReservationSection = () => {
     //* To Make Validation
     const [name, setName] = useState("");
@@ -97,5 +98,4 @@ const ReservationSection = () => {
         </div>
     );
 }
-
 export default ReservationSection;

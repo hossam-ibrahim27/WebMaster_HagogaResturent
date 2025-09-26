@@ -1,5 +1,6 @@
 import "../../../src/css/homeComponents/MainSection.css"
 import "../../../src/css/homeComponents/FoodTabs.css"
+
 const FoodTabs = (props) => {
     // console.log(typeof props.id);
     // console.log(typeof props.foodsprice);

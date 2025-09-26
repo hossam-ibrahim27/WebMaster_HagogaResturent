@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faEnvelope, faPhone ,faUser } from '@fortawesome/free-solid-svg-icons'; {/**icons*/ }
 import "../../css/contactComponents/contactSection.css"
+
 const ContactSection = () => {
     return (
         <div className="contact-section contact-page">

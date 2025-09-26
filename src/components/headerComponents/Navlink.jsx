@@ -41,7 +41,6 @@ const Navlink = () => {
                     <NavLink className={classActive} to="/contact">تواصل معنا</NavLink>
                 </div> {/*links */}
                 {
-
                     window.localStorage.getItem("user") ?
                         <div className="form logout">
                             <span>

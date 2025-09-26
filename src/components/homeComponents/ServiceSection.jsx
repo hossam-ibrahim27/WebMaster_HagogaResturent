@@ -6,6 +6,7 @@ import service1 from "/src/images/1.png";
 import service2 from "/src/images/2.png";
 import service3 from "/src/images/3.png";
 import service4 from "/src/images/4.png";
+
 const serviceItems = [
     { id: 1, title: "اختر الأيام المتاحة", discr: "تحقق من التواريخ المتاحة للحجز", src: service1 },
     { id: 2, title: "أضف عناصر القائمة", discr: "أضف العناصر المفضلة لديك، بما في ذلك الأطباق الخاصة والمشروبات", src: service2 },

@@ -1,9 +1,9 @@
 import '../../css/homeComponents/OfferSection.css';
 import '../../css/homeComponents/AboutSection.css'
 import '../../css/aboutComponents/OfferSection.css';
+
 const OfferSection = (props) => {
     const dataOfferSection = Array.from(props.offerSection);
-
     return (
         <div className='about-section offer-section offer-page'>
             <div className='overlay'></div>

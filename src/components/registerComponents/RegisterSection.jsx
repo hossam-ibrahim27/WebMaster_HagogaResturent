@@ -5,6 +5,7 @@ import { NavLink } from 'react-router';
 import { useState } from 'react';
 import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import app from '../../configure/Firebase';
+
 const RegisterSection = () => {
     //* To Make Validation
     const [frName, setFrName] = useState("");

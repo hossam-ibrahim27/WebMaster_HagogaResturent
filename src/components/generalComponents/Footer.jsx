@@ -4,6 +4,7 @@ import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'; {
 import "../../css/generalComponents/Footer.css"
 import { NavLink } from 'react-router';
 import logo from '/src/images/logo.png';
+
 const Footer = () => {
     return (
         <footer>

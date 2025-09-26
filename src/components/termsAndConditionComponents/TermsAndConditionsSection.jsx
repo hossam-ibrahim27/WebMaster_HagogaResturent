@@ -1,4 +1,5 @@
 import "../../css/termsAndCodtionComponents/TermsAndConditionsSection.css"
+
 const TermsAndConditionsSection = () => {
     return (
         <div className="terms-section">
@@ -81,5 +82,4 @@ const TermsAndConditionsSection = () => {
         </div>
     );
 }
-
 export default TermsAndConditionsSection;
